@@ -1,0 +1,78 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/cloak/*",
+      "tools/build/*",
+      "tools/node/*",
+      "tools/vscode/*",
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/gulp": "^4.0.6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "find-up": "^4.1.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "jest": "^25.5.4",
+    "lerna": "^3.20.2",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "nps": "^5.9.12",
+    "nps-utils": "^1.7.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3",
+    "yarn": "^1.22.4"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "gulp": "gulp",
+    "unit_test": "jest",
+    "test": "jest",
+    "jest:watch": "jest --watch",
+    "jest:cov": "jest --coverage",
+    "lerna": "lerna"
+  },
+  "jest": {
+    "clearMocks": true,
+    "cacheDirectory": ".jest-cache",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "modulePaths": [
+      "<rootDir>/packages/"
+    ],
+    "collectCoverageFrom": [
+      "packages/**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/lib/**",
+      "!**/__tests__/**"
+    ],
+    "testMatch": [
+      "<rootDir>/**/**/*.(spec|test).ts(x|)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.jest.json",
+        "diagnostics": {
+          "pathRegex": "/.(spec|test).ts$/"
+        }
+      }
+    }
+  }
+}

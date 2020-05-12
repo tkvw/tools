@@ -1,0 +1,30 @@
+{
+  "name": "@tkvw/build",
+  "version": "1.0.0",
+  "description": "Personal build tools",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "/tsconfig",
+    "/lib"
+  ],
+  "scripts": {
+    "start": "nps"
+  },
+  "keywords": [
+    "tkvw",
+    "build",
+    "lerna",
+    "typescript",
+    "nps"
+  ],
+  "author": "Dennie de Lange <dennie@tkvw.nl> (https://tkvw.nl)",
+  "license": "MIT",
+  "dependencies": {
+    "nps": "^5.9.12",
+    "nps-utils": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.150"
+  }
+}

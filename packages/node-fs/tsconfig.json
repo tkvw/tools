@@ -1,0 +1,10 @@
+{
+  "extends": "../../node_modules/@tkvw/build/tsconfig/lerna.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "baseUrl": "./src",
+    "typeRoots": ["../../node_modules/@types", "./node_modules/@types"]
+  },
+  "include": ["src/index.ts"]
+}

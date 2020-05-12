@@ -1,0 +1,22 @@
+{
+  "name": "@tkvw/node-fs",
+  "version": "1.0.0",
+  "description": "File system utilities",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "start": "nps"
+  },
+  "keywords": [
+    "fs",
+    "findUp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkvw/tools.git"
+  },
+  "author": "Dennie de Lange <dennie@tkvw.nl> (https://tkvw.nl)",
+  "license": "MIT"
+}

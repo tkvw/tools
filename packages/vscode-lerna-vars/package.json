@@ -1,0 +1,62 @@
+{
+  "name": "tkvw-vscode-lerna-variables",
+  "version": "1.0.0",
+  "description": "Reference lerna monorepo and npm package.json location variables",
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "tkvw.showVars",
+        "title": "Tkvw: Show current variables"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:tkvw.showVars",
+    "onCommand:tkvw.vars.folder.lerna.json",
+    "onCommand:tkvw.vars.fileRelativeTo.lerna.json",
+    "onCommand:tkvw.vars.folder.package.json",
+    "onCommand:tkvw.vars.fileRelativeTo.package.json",
+    "onCommand:tkvw.vars.folder.tsconfig.json",
+    "onCommand:tkvw.vars.fileRelativeTo.tsconfig.json"
+  ],
+  "keywords": [
+    "vscode",
+    "extension",
+    "variable",
+    "launch",
+    "typescript",
+    "lerna",
+    "npm",
+    "package.json",
+    "tsconfig"
+  ],
+  "main": "./lib/extension.js",
+  "scripts": {
+    "start": "nps",
+    "lint": "eslint src --ext ts"
+  },
+  "publisher": "tkvw",
+  "icon": "images/tkvw.png",
+  "homepage": "https://github.com/tkvw/monorepo/tools/vscode/variables",
+  "bugs": {
+    "url": "https://github.com/tkvw/monorepo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkvw/monorepo.git"
+  },
+  "author": "Dennie de Lange",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/vscode": "^1.44.0",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
+  }
+}

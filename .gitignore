@@ -1,0 +1,6 @@
+.env
+node_modules
+.jest-cache
+lib
+# Ignore visual studio code extensions
+*.vsix
